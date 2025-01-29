@@ -1,4 +1,11 @@
+local telescope = require("telescope").setup({
+	defaults = {	
+		file_ignore_patterns = {"node%_modules", "target", "bin"}
+	}
+})
+
 local builtin = require("telescope.builtin")
+
 vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
