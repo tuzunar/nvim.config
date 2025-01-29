@@ -1,9 +1,6 @@
 return {
 	{
-		'numToStr/Comment.nvim',
-		opts = {
-			-- add any options here
-		}
+		'numToStr/Comment.nvim'
 	},
 	{
 		'nvim-lualine/lualine.nvim',
