@@ -1,4 +1,9 @@
 require("mason").setup({})
-require("mason-lspconfig").setup {
-	ensure_installed = { "lua_ls", "rust_analyzer", "gopls", "buf_ls" }
-}
+require("mason-lspconfig").setup({
+    handlers = {
+        function(server_name)
+            vim.lsp.config(server_name, {})
+            vim.lsp.enable(server_name)
+        end,
+    }
+})
